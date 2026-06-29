@@ -80,14 +80,7 @@ export default function InvitationCard({ isOpened }) {
 
           {/* Guest name – dynamic via ?guest=Name */}
           <div className="guest-box">
-            {guestName ? (
-              <>
-                <span style={{ fontSize: '0.75rem', display: 'block', letterSpacing: '2px', fontFamily: "'Cinzel', serif", color: 'var(--gold-dark)', marginBottom: '4px', textTransform: 'uppercase' }}>Kính gửi</span>
-                {guestName}
-              </>
-            ) : (
-              'Quý vị và gia đình'
-            )}
+            {guestName ? guestName : 'Quý vị và gia đình'}
           </div>
 
           <p style={{
